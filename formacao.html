@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+</head>
+<style>
+    body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+}
+
+/*estilo do cabeçaalho da página*/
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+}
+
+/*estilo do menu*/
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    /*centraliza o menu*/
+    justify-content: center;
+    gap: 20px;
+}
+
+/*estilo do avatar*/
+.avatar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*coluna grid posicionado a direita*/
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+/*estilo do rodapé*/
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*estilo dos links*/
+a, a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #506E6A 1px;
+}
+
+li {
+    float: left;
+}
+
+/*Estilo link quando passa o mouse*/
+a:hover {
+    background-color: #506E6A;
+    color: white;
+}
+
+/*Estilo menu de página selecionada*/
+.active {
+    background-color: #506E6A;
+    color: white;
+}
+
+
+.wrapper {
+    /*Tamanho mi­nimo da seção do conteúdo*/
+    min-height: 70vh;
+}
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+
+    /*AlteraÃ§Ãĩes do grid dispositivos mÃģveis*/
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .avatar {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Tamanho imagem dispositivos móveis*/
+    .avatar img {
+        width: 100%;
+    }
+    a, a:link {
+        padding: 8px 8px;
+        
+    }
+}    
+    /*fonte de estilização de paragrafo e Título*/
+    h1, p {
+     font-family:Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <!-- cabeçalho da página -->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio Pessoal (CV online)</h1>
+        <br>
+    </header>
+    <!-- menu da página -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="formacao.html" class="active">Formação</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- seção central com o conteúdo página -->
+    <div class="container wrapper">
+        <section class="principal">
+            <h1>
+                Formação
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="tecnologia.ico">
+                    <div>
+                        <p>Graduando em Analise e Desenvolvimento de Sistemas.</p>
+                        <p>Idioma cursando Inglês, fluente/nativo Português.</p>
+                        <p>Sou formado no curso profissionalizante Magistério
+                        com o objetivo de atuar nas séries inicias do ensino funfamental 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- rodapé da página -->
+    <footer class="container">
+        <h1> Desenvolvido para fins educacionais</h1>
+    </footer>
+</html>

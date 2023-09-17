@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Ulisses</title>
+</head>
+<style>
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+}
+
+/*estilo do cabeçalho da página*/
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+}
+
+/*estilo do menu*/
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    /*centraliza o menu*/
+    justify-content: center;
+    gap: 20px;
+}
+
+/*estilo do avatar*/
+.avatar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*coluna grid posicionado a direita*/
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+/*estilo do rodapé*/
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*estilo dos links*/
+a, a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #506E6A 1px;
+}
+
+li {
+    float: left;
+}
+
+/*Estilo link quando passa o mouse*/
+a:hover {
+    background-color: #506E6A;
+    color: white;
+}
+
+/*Estilo menu de página selecionada*/
+.active {
+    background-color: #506E6A;
+    color: white;
+}
+
+
+.wrapper {
+    /*Tamanho mi­nimo da seção do conteúdo*/
+    min-height: 70vh;
+}
+
+/* media query para dispositivos moveis */
+@media only screen and (max-width: 767px) {
+
+    /*Alteracões do grid dispositivos móveis*/
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .avatar {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Tamanho imagem dispositivos móveis*/
+    .avatar img {
+        width: 100%;
+    }
+    a, a:link {
+        padding: 8px 8px;
+        
+    }
+}    
+    /*fonte de estilização de paragrafo e Título*/
+    h1, p {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+</style>
+<body>
+    <body>
+        <!-- cabeçalho da página -->
+        <header class="container">
+            <h1 style="color: white; text-align: center;"> Portfólio Pessoal (CV online)</h1>
+            <br>
+    
+        </header>
+        <!-- menu da página -->
+        <nav class="container menu">
+            <ul>
+                <li><a href="index.html" class="active">Biografia</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    
+        <!-- seção central com o conteúdo página -->
+        <div class="container wrapper">
+            <aside class="avatar">
+                <img src="paulo.ico">
+                <div class="principal">
+                    <div class="infos">
+                        <p><strong>Nome:</strong> Paulo Eberson Ulisses</p>
+                        <p>
+                            <strong>Data do Nascimento</strong>
+                            12/06/1992
+                        </p>
+                        <p><strong>Ru:</strong> 2739359</p>
+                    </div>
+                </div>
+    
+            </aside>
+            <section class="principal">
+                <h1>
+                    Paulo Eberson Ulisses
+                </h1>
+                <!-- span style é o que muda a cor da primeira letra do texto -->
+                <p><span style="color:rgb(103, 23, 202);">B</span>om, profissionalmente venho com uma vasta experiência no atendimento
+                    ao público.
+                    Trabalhei em 2018 na empresa Advise Consultoria a mesma tem como foco em ramo de concursos públicos.
+                    Atualmente trabalho em um empresa local com atendimento direto ao público e na parte administrativa da mesma.
+                    já tenho algum conhecimento de linguagens de programação como: python, css e Html5.
+                    Tenho conhecimento em Git e GitHub</p>
+                <p><span style="color:rgb(60, 33, 212);">U</span>m hobby que amo é maratona séries, sou um apaixonado por leituras por práticar de musculação
+                    e nas horas vagas sou Gamer.</p>
+    
+            </section>
+        </div>
+        <!-- rodapé da página -->
+        <footer class="container">
+            <h1>Desenvolvido para fins educacionais</h1>
+        </footer>
+        
+    
+</body>
+</html>

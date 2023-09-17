@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<style>
+    body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    
+}
+
+/*estilo do cabeçalho da página*/
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+}
+
+/*estilo do menu*/
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    /*centraliza o menu*/
+    justify-content: center;
+    gap: 20px;
+}
+
+/*estilo do avatar*/
+.avatar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*coluna grid posicionado a direita*/
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+/*estilo do rodapé*/
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #506E6A;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*estilo dos links*/
+a, a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid #506E6A 1px;
+}
+
+li {
+    float: left;
+}
+
+/*Estilo link quando passa o mouse*/
+a:hover {
+    background-color: #506E6A;
+    color: white;
+}
+
+/*Estilo menu de página selecionada*/
+.active {
+    background-color: #506E6A;
+    color: white;
+}
+
+
+.wrapper {
+    /*Tamanho mi­nimo da seção do conteúdo*/
+    min-height: 70vh;
+}
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+
+    /*Alterações do grid dispositivos móveis*/
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .avatar {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Alterações do grid dispositivos móveis*/
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    /*Tamanho imagem dispositivos móveis*/
+    .avatar img {
+        width: 100%;
+    }
+    a, a:link {
+        padding: 8px 8px;
+        
+    }
+}
+    /* Estilização do parágrafo*/
+    h1 {
+     font-family: Arial, Helvetica, sans-serif;
+    }
+    .contato {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    }
+     /* Estilizando incones*/
+    .icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+</style>
+<body>
+    <!-- cabeçalho da página -->
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio Pessoa (CV online)l</h1>
+        <br>
+    </header>
+    <!-- menu da página -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portfólio</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- seção central com o conteúdo página -->
+    <div class="container wrapper">
+        <section class="principal">
+            <div class="card">
+                <h1>
+                    Entre em contato
+                </h1>
+                <table class="formulario">
+
+
+                    <!--para preencher o nome do contato-->
+                    <tr>
+                        <th class="legenda"><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome"></td>
+                    </tr>
+                    <!--para preencher o e-mail do contato-->
+                    <tr>
+                        <th class="legenda"><label for="e-mail">E-mail</label></th>
+                        <td><input type="text" name="e-mail" id="e-mail"></td>
+                    </tr>
+                    <!--para digitar a mensagem do contato-->
+                    <tr>
+                        <th class="legenda"><label for="smg">Digite sua mensagem:</label></th>
+                        <td><textarea name="smg" rows="10" style="width: 100%;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <!--um botão para enviar a mensagem-->
+                        <td><button>Enviar</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <br><br>
+    </form>
+</section>
+<!--Dentro do footer esta todas as configurações whats, localização e email-->
+<footer style="clear: both;">
+    <div style="padding: 30px; background-color:gray; color: white; font-size: larger;">
+        <div class="footer-conteiner">
+                <div>
+                    <img class="icon" src="whats-t.png"> (XX) 9XXXX-XXXX 
+                </div>
+                <div>
+                    <img class="icon" src="location-t.png"> Minha localização
+                </div>
+                <div>
+                    <img class="icon" src="email-t.png"> email@email.com.br
+                </div>
+</footer>
+    <!-- rodapé da página -->
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+</body>
+</html>
